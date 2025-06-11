@@ -14,3 +14,4 @@ class Employee(models.Model):
     department = models.ForeignKey(Department, on_delete=models.SET_NULL, null=True)
     employment_status = models.CharField(max_length=50)
     manager = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, null=True, related_name='managed_employees')
+
